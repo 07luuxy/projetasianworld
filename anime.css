@@ -1,0 +1,172 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: plum;
+    background: linear-gradient(to bottom, rgb(40, 26, 67), black, rgb(76, 23, 99),rgba(0, 0, 0, 0.904), black);
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(to bottom, rgb(52, 2, 54), #7f068d, rgba(40, 26, 67, 0.639));
+    color:white;
+    padding: 1em;
+    text-align: center;
+}
+.logo img{
+    width:200px;
+    border-radius: 50%;
+    box-shadow: 0.2em 0.2em 0.5em plum;
+    
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-top: 1em; 
+    gap:1em;
+}
+i{
+    font-size: 2em;
+    color: aliceblue;
+    margin-left:1em;
+}
+.head{ 
+    display: flex;
+    flex-direction: column;
+    text-shadow:0.1em 0.1em 0.2em #7f068d;
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.navbar{
+    margin-top: 1em;
+}
+nav a{
+    text-decoration: none;
+    color: pink;
+    margin: 0 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+nav a:hover{
+    background-color: rgb(76, 23, 99);
+    box-shadow: 0 0 2.5em rgb(235, 110, 156);
+    color: palevioletred;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(157, 59, 202, 0.849);
+  width: 30%;
+  min-width: 250px;
+  color: white;
+  box-sizing: border-box;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 200px; /* ajuste la hauteur maximale si nécessaire */
+  object-fit: cover;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em purple;
+}
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 2 par ligne */
+  gap:2em;
+  margin-top: 2em;
+  padding: 1em;
+}
+.media-item video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em rgba(206, 148, 235, 0.7);
+}
+
+.media-item p {
+  margin-top: 0.5em;
+  font-weight:bold;
+  color: plum;
+}
+
+.media-grid video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em rgba(255, 255, 255, 0.1);
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* max 4 par ligne */
+  gap: 1.5em;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.image-grid .card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(219, 131, 223, 0.927);
+  text-align: center;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgb(224, 159, 237);
+}
+
+footer {
+  text-align: center;
+  padding: 2em;
+  color: pink;
+}
+.footerimg{
+    aspect-ratio: 5/1;
+    object-fit: contain;
+    align-content: center;
+    width: 100%;
+}
+#Thanks{
+    font-size: 40px;
+    color: rgb(201, 175, 231);
+    font-family: cursive;
+    text-shadow: 0.1em 0.1em 0.2em rgb(231, 10, 235),0.1em 0.1em 0.1em whitesmoke;
+}
+.img{
+    width: 4%;
+    margin-left: 5%;
+    border-radius: 50%;
+    box-shadow: 0.2em 0.2em 0.5em;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}

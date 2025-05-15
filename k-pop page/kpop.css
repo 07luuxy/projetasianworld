@@ -1,0 +1,168 @@
+header{
+    background:linear-gradient(to bottom,rgb(59, 4, 59),rgb(204, 125, 204),rgb(59, 4, 59),black);
+    padding-top: 1em;
+    width: 100%;
+}
+body{
+    background:linear-gradient(to bottom,rgb(59, 4, 59),black,rgb(18, 1, 34));
+}
+main{
+    background:linear-gradient(to bottom,,rgb(59, 4, 59),black,rgb(18, 1, 34)); 
+}
+section{
+    padding-bottom: 1em;
+    align-self: auto;
+    padding-top: 2em;
+}
+h1{
+    color: rgb(207, 7, 207); /*titre*/
+    font-family: cursive;
+    height: 100%;
+    margin-left:40%;
+    margin-right: 23%;
+    text-shadow: 0.2em 0.2em 0.2em blueviolet;
+    flex-wrap: nowrap;
+    ;
+}
+#logo{
+    width: 12%;
+    border-radius: 50%;
+    margin-top: 1em;
+    float: left;
+}
+#search{
+    background-color: rgb(236, 235, 235);
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(77, 76, 76);
+    margin-top: 2em;
+    margin-left: 30%;
+    width: 40%;
+}
+.div{
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+a{
+    color: rgb(221, 4, 221);
+    text-decoration: none;
+    margin-left:10%;
+    cursor: pointer;
+}
+a:hover{
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#all{
+    text-decoration: underline;
+    font-size: 15px;
+}
+h2{
+    color: blueviolet;
+    font-size: 100%;
+    text-shadow: 2px 2px 2px rgb(119, 3, 119);
+}
+p{
+    color:rgb(221, 4, 221) ;
+}
+img{
+    width: 30%;
+    border-radius: 20px; /*images*/
+}
+.kpop{
+    background-color: rgb(18, 1, 34) ;
+    padding-top: 0.5em;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 0.3em;
+    display: inline-block;
+}
+    .kpop {
+    flex: 1 1 300px; /* 1 = grow, 1 = shrink, 300px = base width */
+}
+
+video{
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+}
+.tough{
+    background-color: rgb(18, 1, 34);
+    border-radius: 20px;
+    box-shadow: 0.3em 0.3em 0.3em rgb(228, 39, 228) inset;
+}
+    .tough {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+    padding: 1em;
+}
+footer{
+    background:linear-gradient(to bottom,rgb(18, 1, 34),rgb(77, 3, 77),plum);
+    text-align: center;
+    border-radius: 20px;
+}
+.footerimg{
+    aspect-ratio: 5/1;
+    object-fit: contain;
+    align-content: center;
+    width: 100%;
+}
+#Thanks{
+    font-size: 40px;
+    color: rgb(201, 175, 231);
+    font-family: cursive;
+    text-shadow: 0.1em 0.1em 0.2em rgb(231, 10, 235),0.1em 0.1em 0.1em whitesmoke;
+}
+.img{
+    width: 4%;
+    margin-left: 5%;
+}
+
+/*responsive*/
+@media screen and (max-width: 400px) {
+  header {
+      width: 100%; /* Pas 10% sinon tout disparaît */
+      border-radius: 5%;
+  }
+
+  #logo {
+      width: 30%;
+      margin-top: 0.2em;
+      float: none;
+  }
+
+  #search {
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .kpop {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .img {
+      width: 20%;
+      margin: 2%;
+  }
+
+  h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-left: 0;
+  }
+}
+
+
+
+
+

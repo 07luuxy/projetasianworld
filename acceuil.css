@@ -1,0 +1,259 @@
+header{
+    background: rgba(17, 17, 17, 0.997);
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+.logo{
+    padding-left: 10px;
+    font-size: 40px;
+    color: bisque;
+}
+
+.logo img{
+    width: 250px;
+    height: 250px;
+}
+
+.navbar{
+    position: relative;
+    width: 470px;
+    height: 40px;
+    background: #4b4b4bfc;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    position: static;
+    margin-left: 35%;
+}
+
+.navbar a{
+    color:palevioletred;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    margin-left: 40px;
+    transition: 100ms;
+}
+
+.navbar a:hover{
+    color: white;
+    background-color: purple;
+    box-shadow: 0px 0px 20px 20px plum;
+    transform: translate(-10%, -10%);
+    font-size: 30px;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.997), rgb(202, 3, 202), purple);
+    height: 800px;
+}
+
+.Welcome{
+    font-size: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description{
+    font-size: 20px;
+}
+
+#enter{
+ width: 200px;  
+ height: 50px; 
+ border-radius: 20px;
+ border: solid;
+
+}
+
+#enter:hover {
+    transform: translateY(-5px);
+    border: solid plum;
+}
+
+#Confirm{
+    height: 50px;
+    width: 150px;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: solid ;
+    transition: 100ms;
+
+}
+
+#Confirm:hover{
+    color: purple;
+    background-color: aliceblue;
+    transform: translateY(-10%);
+    box-shadow: 0px 0px 20px 20px plum;
+}
+
+.section2{
+    background-color: purple;
+    align-items: center;
+    display: flex;
+    height:300px ;
+    background: linear-gradient(to bottom,  purple, rgba(17, 17, 17, 0.997) );
+}
+
+#Kpop{
+    background-color: black;
+    border-radius: 20px;
+    height: 150px;
+    width: 70%;
+    border: solid plum;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#Kpop img{
+    float: left;
+    height: 100px;
+}
+
+
+
+.text1{
+    color: antiquewhite;
+}
+
+#Kdrama{
+    background-color: black;
+    border-radius: 20px;
+    height: 150px;
+    width: 70%;
+    border: solid plum;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#Kdrama img{
+    float: left;
+    height: 100px;
+}
+
+
+
+.text2{
+    color: antiquewhite; 
+}
+
+#divers{
+    background-color: black;
+    border-radius: 20px;
+    height: 150px;
+    width: 70%;
+    border: solid plum;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#divers img{
+    float: left;
+    height: 100px;
+}
+
+.text3{
+    color: antiquewhite;  
+}
+
+.section2 a{
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 100ms;
+}
+
+.section2 a:hover{
+    border:  purple;
+    transform: translate(-1%,-1%);
+    box-shadow: 10px 10px 10px 10px plum;
+
+}
+
+footer{
+    background-color:rgba(17, 17, 17, 0.997) ;
+    color: antiquewhite;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.thanking{
+    font-size: 50px;
+}
+
+.contact{
+    margin-top:30px;
+}
+
+.contact img{
+    width:15%;
+    aspect-ratio: 5/1;
+    object-fit: contain;
+}
+
+@media(max-width: 935px){
+    .navbar{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Welcome{
+        font-size: 40px;
+    }
+
+    .section2{
+        display:grid;
+        gap: 20px;
+        height: auto;
+    }
+
+    #Kpop{
+        margin-left: 60px;
+    }
+
+    #divers{
+        margin-left: 60px;
+    }
+
+
+    .text1, .text2, .text3{
+        font-size: 12px;
+    }
+
+    .thanking{
+        font-size: 40px;
+    }
+
+    
+    .contact img{
+        width:15%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+}
+}
